@@ -101,7 +101,8 @@ services:
         - traefik.http.services.swarmprom-grafana.loadbalancer.server.port=3000
 
   alertmanager:
-    image: stefanprodan/swarmprom-alertmanager:v0.14.0
+    #image: stefanprodan/swarmprom-alertmanager:v0.14.0
+    image: dortizgu/alertmanager:v0.24.0
     networks:
       - default
       - net
