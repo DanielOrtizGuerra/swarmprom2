@@ -102,7 +102,7 @@ services:
 
   alertmanager:
     #image: stefanprodan/swarmprom-alertmanager:v0.14.0
-    image: dortizgu/alertmanager:v0.24.0
+    image: dortizgu/swarmprom2-alertmanager:v0.24.0
     networks:
       - default
       - net
