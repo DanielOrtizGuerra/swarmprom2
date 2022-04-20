@@ -1,6 +1,8 @@
 global:
-  scrape_interval:     15s
-  evaluation_interval: 15s
+  #scrape_interval:     15s
+  #evaluation_interval: 15s
+  scrape_interval:     3s
+  evaluation_interval: 3s
 
   external_labels:
     monitor: 'promswarm'
@@ -40,5 +42,3 @@ scrape_configs:
       - 'tasks.node-exporter'
       type: 'A'
       port: 9100
-
-
